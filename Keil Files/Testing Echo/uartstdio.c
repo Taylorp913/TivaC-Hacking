@@ -25,17 +25,17 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdarg.h>
-#include "inc/hw_ints.h"
-#include "inc/hw_memmap.h"
-#include "inc/hw_types.h"
-#include "inc/hw_uart.h"
-#include "driverlib/debug.h"
-#include "driverlib/interrupt.h"
-#include "driverlib/rom.h"
-#include "driverlib/rom_map.h"
-#include "driverlib/sysctl.h"
-#include "driverlib/uart.h"
-#include "utils/uartstdio.h"
+#include "hw_ints.h"
+#include "hw_memmap.h"
+#include "hw_types.h"
+#include "hw_uart.h"
+#include "debug.h"
+#include "interrupt.h"
+#include "rom.h"
+#include "rom_map.h"
+#include "sysctl.h"
+#include "uart.h"
+#include "uartstdio.h"
 
 //*****************************************************************************
 //

@@ -116,15 +116,6 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
-          <Key>ARMRTXEVENTFLAGS</Key>
-          <Name>-L70 -Z18 -C0 -M0 -T1</Name>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
-          <Key>DLGUARM</Key>
-        </SetRegEntry>
-        <SetRegEntry>
-          <Number>0</Number>
           <Key>DLGTARM</Key>
           <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
@@ -144,89 +135,7 @@
           <Name>UL2CM3(-S0 -C0 -P0 ) -FN1 -FC1000 -FD20000000 -FF0TM4C123_256 -FL040000 -FS00 -FP0($$Device:TM4C123GH6PM$Flash\TM4C123_256.FLM)</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint>
-        <Bp>
-          <Number>0</Number>
-          <Type>0</Type>
-          <LineNumber>21</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>798</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\SP\main.c\21</Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>10</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>780</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\SP\main.c\10</Expression>
-        </Bp>
-      </Breakpoint>
-      <WatchWindow1>
-        <Ww>
-          <count>0</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>buffer</ItemText>
-        </Ww>
-        <Ww>
-          <count>1</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>buffer2</ItemText>
-        </Ww>
-        <Ww>
-          <count>2</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>R0</ItemText>
-        </Ww>
-      </WatchWindow1>
-      <MemoryWindow1>
-        <Mm>
-          <WinNumber>1</WinNumber>
-          <SubType>0</SubType>
-          <ItemText>0x00000000</ItemText>
-          <AccSizeX>0</AccSizeX>
-        </Mm>
-      </MemoryWindow1>
-      <MemoryWindow2>
-        <Mm>
-          <WinNumber>2</WinNumber>
-          <SubType>2</SubType>
-          <ItemText>0x20000068</ItemText>
-          <AccSizeX>0</AccSizeX>
-        </Mm>
-      </MemoryWindow2>
-      <MemoryWindow3>
-        <Mm>
-          <WinNumber>3</WinNumber>
-          <SubType>0</SubType>
-          <ItemText>0x20007f54</ItemText>
-          <AccSizeX>0</AccSizeX>
-        </Mm>
-      </MemoryWindow3>
-      <MemoryWindow4>
-        <Mm>
-          <WinNumber>4</WinNumber>
-          <SubType>0</SubType>
-          <ItemText>0x0000001cF</ItemText>
-          <AccSizeX>0</AccSizeX>
-        </Mm>
-      </MemoryWindow4>
+      <Breakpoint/>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
@@ -247,7 +156,7 @@
         <AscS3>0</AscS3>
         <aSer3>0</aSer3>
         <eProf>0</eProf>
-        <aLa>1</aLa>
+        <aLa>0</aLa>
         <aPa1>0</aPa1>
         <AscS4>0</AscS4>
         <aSer4>0</aSer4>
@@ -275,11 +184,11 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\main.c</PathWithFileName>
-      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <PathWithFileName>.\uartstdio.c</PathWithFileName>
+      <FilenameWithoutPath>uartstdio.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

@@ -1,0 +1,16 @@
+.\objects\main.o: main.c
+.\objects\main.o: uartstdio.c
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main.o: hw_ints.h
+.\objects\main.o: hw_memmap.h
+.\objects\main.o: hw_types.h
+.\objects\main.o: hw_uart.h
+.\objects\main.o: debug.h
+.\objects\main.o: interrupt.h
+.\objects\main.o: rom.h
+.\objects\main.o: rom_map.h
+.\objects\main.o: sysctl.h
+.\objects\main.o: uart.h
+.\objects\main.o: uartstdio.h
