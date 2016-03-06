@@ -113,85 +113,85 @@ ARM Macro Assembler    Page 2
               F2C4 020F        mov32            r2, #0x400fd100 ;write FWBn loc
                                                             ation
    89 00000008 F24F 214E 
-              F2C1 0108        mov32            r1, #0x1008F24E
+              F2C1 0108        mov32            r1, #0x1008F24E ;
    90 00000010 6011            str              r1, [r2]
    91 00000012 F24F 21C4 
-              F2C0 010F        mov32            r1, #0x000FF2C4
+              F2C0 010F        mov32            r1, #0x000FF2C4 ;
    92 0000001A 6051            str              r1, [r2, #0x4]
    93 0000001C F24F 014F 
-              F2C0 1120        mov32            r1, #0x0120F04F
+              F2C0 1120        mov32            r1, #0x0120F04F ;
    94 00000024 6091            str              r1, [r2, #0x8]
    95 00000026 F246 0101 
-              F2C0 0100        mov32            r1, #0x6001
+              F2CF 2145        mov32            r1, #0xF2456001 ;
    96 0000002E 60D1            str              r1, [r2, #0xC]
-   97 00000030 F24F 2145 
-              F2C0 0100        mov32            r1, #0xF245
+   97 00000030 F240 0100 
+              F2CF 21C4        mov32            r1, #0xF2C40000 ;
    98 00000038 6111            str              r1, [r2, #0x10]
-   99 0000003A F24F 21C4 
+   99 0000003A F240 0102 
 
 
 
 ARM Macro Assembler    Page 3 
 
 
-              F2C0 0102        mov32            r1, #0x0002F2C4
+              F2CF 2144        mov32            r1, #0xF2440002 ;
   100 00000042 6151            str              r1, [r2, #0x14]
-  101 00000044 F24F 2144 
-              F2C3 114B        mov32            r1, #0x314BF244
+  101 00000044 F243 114B 
+              F2CF 61C4        mov32            r1, #0xF6C4314B
   102 0000004C 6191            str              r1, [r2, #0x18]
-  103 0000004E F24F 61C4 
-              F2C4 114F        mov32            r1, #0x414FF6C4
+  103 0000004E F244 114F 
+              F6CF 01C0        mov32            r1, #0xF8C0414F ;
   104 00000056 61D1            str              r1, [r2, #0x1C]
-  105 00000058 F64F 01C0 
-              F2C1 5120        mov32            r1, #0x1520F8C0
+  105 00000058 F241 5120 
+              F2CF 014F        mov32            r1, #0xF04F1520 ;
   106 00000060 6211            str              r1, [r2, #0x20]
-  107 00000062 F24F 014F 
-              F2C0 111F        mov32            r1, #0x011FF04F
+  107 00000062 F240 111F 
+              F6CF 01C0        mov32            r1, #0xF8C0011F ;
   108 0000006A 6251            str              r1, [r2, #0x24]
-  109 0000006C F64F 01C0 
-              F2C1 5124        mov32            r1, #0x1524F8C0
+  109 0000006C F241 5124 
+              F2CF 014F        mov32            r1, #0xF04F1524 ;
   110 00000074 6291            str              r1, [r2, #0x28]
-  111 00000076 F24F 014F 
-              F2C0 1111        mov32            r1, #0x0111F04F
+  111 00000076 F240 1111 
+              F6CF 01C0        mov32            r1, #0xF8C00111 ;
   112 0000007E 62D1            str              r1, [r2, #0x2C]
-  113 00000080 F64F 01C0 
-              F2C1 5110        mov32            r1, #0x1510F8C0
+  113 00000080 F241 5110 
+              F2CF 014F        mov32            r1, #0xF04F1510 ;
   114 00000088 6311            str              r1, [r2, #0x30]
-  115 0000008A F24F 014F 
-              F2C0 110F        mov32            r1, #0x010FF04F
+  115 0000008A F240 110F 
+              F6CF 01C0        mov32            r1, #0xF8C0010F ;
   116 00000092 6351            str              r1, [r2, #0x34]
-  117 00000094 F64F 01C0 
-              F2C1 4100        mov32            r1, #0x1400F8C0
+  117 00000094 F241 4100 
+              F2CF 014F        mov32            r1, #0xF04F1400 ;
   118 0000009C 6391            str              r1, [r2, #0x38]
-  119 0000009E F24F 014F 
-              F2C0 111F        mov32            r1, #0x011FF04F
+  119 0000009E F240 111F 
+              F6CF 01C0        mov32            r1, #0xF8C0011F ;
   120 000000A6 63D1            str              r1, [r2, #0x3C]
-  121 000000A8 F64F 01C0 
-              F2C1 511C        mov32            r1, #0x151CF8C0
+  121 000000A8 F241 511C 
+              F2CF 2140        mov32            r1, #0xF240151C
   122 000000B0 6411            str              r1, [r2, #0x40]
-  123 000000B2 F24F 2140 
-              F2C0 1102        mov32            r1, #0x0102F240
+  123 000000B2 F240 1102 
+              F2CF 21C0        mov32            r1, #0xF2C00102
   124 000000BA 6451            str              r1, [r2, #0x44]
-  125 000000BC F24F 21C0 
-              F2C0 1100        mov32            r1, #0x0100F2C0
+  125 000000BC F240 1100 
+              F2C6 3181        mov32            r1, #0x63810100
   126 000000C4 6491            str              r1, [r2, #0x48]
-  127 000000C6 F246 3181 
-              F2C0 0100        mov32            r1, #0x6381
-  128 000000CE 64D1            str              r1, [r2, #0x4C]
-  129 000000D0 F24F 014F 
+  127 000000C6 F24F 014F 
               F2C0 4100        mov32            r1, #0x0400F04F
-  130 000000D8 6511            str              r1, [r2, #0x50]
-  131 000000DA F24F 614F 
+  128 000000CE 64D1            str              r1, [r2, #0x4C]
+  129 000000D0 F24F 614F 
               F2C7 51FF        mov32            r1, #0x75FFF64F
-  132 000000E2 6551            str              r1, [r2, #0x54]
-  133 000000E4 F24F 21C0 
+  130 000000D8 6511            str              r1, [r2, #0x50]
+  131 000000DA F24F 21C0 
               F2C0 510F        mov32            r1, #0x050FF2C0
-  134 000000EC 6591            str              r1, [r2, #0x58]
-  135 000000EE F24F 1104 
+  132 000000E2 6551            str              r1, [r2, #0x54]
+  133 000000E4 F24F 1104 
               F2C0 4102        mov32            r1, #0x0402F104
+  134 000000EC 6591            str              r1, [r2, #0x58]
+  135 000000EE F244 21AC 
+              F6CD 51FB        mov32            r1, #0xDDFB42AC
   136 000000F6 65D1            str              r1, [r2, #0x5C]
-  137 000000F8 F240 0100 
-              F2C4 21AC        mov32            r1, #0x42AC0000
+  137 000000F8 F24F 2140 
+              F2C0 1104        mov32            r1, #0x0104F240
   138 00000100 6611            str              r1, [r2, #0x60]
 
 
@@ -199,188 +199,217 @@ ARM Macro Assembler    Page 3
 ARM Macro Assembler    Page 4 
 
 
-  139 00000102 F64D 51FB 
-              F2C0 0100        mov32            r1, #0xDDFB
+  139 00000102 F24F 21C0 
+              F2C0 1100        mov32            r1, #0x0100F2C0
   140 0000010A 6651            str              r1, [r2, #0x64]
-  141 0000010C F24F 2140 
-              F2C0 1104        mov32            r1, #0x0104F240
+  141 0000010C F246 3181 
+              F2CF 014F        mov32            r1, #0xF04F6381
   142 00000114 6691            str              r1, [r2, #0x68]
-  143 00000116 F24F 21C0 
-              F2C0 1100        mov32            r1, #0x0100F2C0
+  143 00000116 F240 4100 
+              F2CF 1104        mov32            r1, #0xF1040400
   144 0000011E 66D1            str              r1, [r2, #0x6C]
-  145 00000120 F246 3181 
-              F2C0 0100        mov32            r1, #0x6381
+  145 00000120 F240 4102 
+              F2C4 21AC        mov32            r1, #0x42AC0402
   146 00000128 6711            str              r1, [r2, #0x70]
-  147 0000012A F24F 014F 
-              F2C0 4100        mov32            r1, #0x0400F04F
+  147 0000012A F64D 51FB 
+              F2CF 2140        mov32            r1, #0xF240DDFB
   148 00000132 6751            str              r1, [r2, #0x74]
-  149 00000134 F24F 1104 
-              F2C0 4102        mov32            r1, #0x0402F104
+  149 00000134 F240 1108 
+              F2CF 21C0        mov32            r1, #0xF2C00108
   150 0000013C 6791            str              r1, [r2, #0x78]
-  151 0000013E F244 21AC 
-              F2C0 0100        mov32            r1, #0x000042AC
+  151 0000013E F240 1100 
+              F2C6 3181        mov32            r1, #0x63810100
   152 00000146 67D1            str              r1, [r2, #0x7C]
-  153 00000148 F64D 51FB 
-              F2C0 0100        mov32            r1, #0xDDFB
-  154 00000150 F8C2 1080       str              r1, [r2, #0x80]
-  155 00000154 F24F 2140 
-              F2C0 1108        mov32            r1, #0x0108F240
-  156 0000015C F8C2 1084       str              r1, [r2, #0x84]
-  157 00000160 F24F 21C0 
-              F2C0 1100        mov32            r1, #0x0100F2C0
-  158 00000168 F8C2 1088       str              r1, [r2, #0x88]
-  159 0000016C F246 3181 
-              F2C0 0100        mov32            r1, #0x6381
-  160 00000174 F8C2 108C       str              r1, [r2, #0x8C]
-  161 00000178 F24E 71DF 
-              F2C0 0100        mov32            r1, #0xE7DF
-  162 00000180 F8C2 1090       str              r1, [r2, #0x90]
-  163 00000184 F240 0100 
-              F2C0 0100        mov32            r1, #0x00000000
-  164 0000018C F8C2 1094       str              r1, [r2, #0x94]
-  165 00000190         
-  166 00000190 F24D 0000 
+  153 00000148         
+  154 00000148 BF00            nop                          ;buffer to make sur
+                                                            e program is outsid
+                                                            e of deleting area
+  155 0000014A BF00            nop
+  156 0000014C BF00            nop
+  157 0000014E BF00            nop
+  158 00000150 BF00            nop
+  159 00000152 BF00            nop
+  160 00000154 BF00            nop
+  161 00000156 BF00            nop
+  162 00000158 BF00            nop
+  163 0000015A BF00            nop
+  164 0000015C BF00            nop
+  165 0000015E BF00            nop
+  166 00000160 BF00            nop
+  167 00000162 BF00            nop
+  168 00000164 BF00            nop
+  169 00000166 BF00            nop
+  170 00000168 BF00            nop
+  171 0000016A BF00            nop
+  172 0000016C BF00            nop
+  173 0000016E BF00            nop
+  174 00000170 BF00            nop
+  175 00000172 BF00            nop
+  176 00000174 BF00            nop
+  177 00000176 BF00            nop
+  178 00000178 BF00            nop
+  179 0000017A BF00            nop
+  180 0000017C BF00            nop
+  181 0000017E BF00            nop
+  182 00000180 BF00            nop
+  183 00000182 BF00            nop
+  184 00000184 BF00            nop
+  185 00000186 BF00            nop
+  186 00000188         
+  187 00000188 F24D 0000 
               F2C4 000F        mov32            r0, #0x400fd000 
-                                                            ; flash reg base
-  167 00000198 F640 0100 
-              F2C0 0100        mov32            r1, #0x800  ; addr to erase
-  168 000001A0 6001            str              r1, [r0]
-  169 000001A2 F240 0102 
-              F2CA 4142        mov32            r1, #0xA4420002 ; erase 1kb
-  170 000001AA 6081            str              r1, [r0,#0x8] ;write CMD to con
-                                                            trol reg
-  171 000001AC         
-  172 000001AC F640 0101 
-              F2C0 0100        mov32            r1, #0x801  ; addr to write
-  173 000001B4 6001            str              r1, [r0]
-  174 000001B6         
-  175 000001B6 F240 0101 
-              F2CA 4142        mov32            r1, #0xa4420001 ; write command
-                                                            
-  176 000001BE 6201            str              r1, [r0,#0x20]
 
 
 
 ARM Macro Assembler    Page 5 
 
 
-  177 000001C0         
-  178 000001C0 BF00            nop
-  179 000001C2 BF00            nop
-  180 000001C4 BF00            nop
-  181 000001C6 BF00            nop
-  182 000001C8 BF00            nop
-  183 000001CA BF00            nop
-  184 000001CC BF00            nop
-  185 000001CE BF00            nop
-  186 000001D0 BF00            nop
-  187 000001D2 BF00            nop
-  188 000001D4 BF00            nop
-  189 000001D6 BF00            nop
-  190 000001D8 BF00            nop
-  191 000001DA BF00            nop
-  192 000001DC BF00            nop
-  193 000001DE BF00            nop
-  194 000001E0 BF00            nop
-  195 000001E2 BF00            nop
-  196 000001E4 BF00            nop
-  197 000001E6 BF00            nop
-  198 000001E8 BF00            nop
-  199 000001EA BF00            nop
-  200 000001EC BF00            nop
-  201 000001EE BF00            nop
-  202 000001F0 BF00            nop
-  203 000001F2 BF00            nop
-  204 000001F4 BF00            nop
-  205 000001F6 BF00            nop
-  206 000001F8 BF00            nop
-  207 000001FA BF00            nop
-  208 000001FC BF00            nop
-  209 000001FE BF00            nop
-  210 00000200 BF00            nop
-  211 00000202 BF00            nop
-  212 00000204 BF00            nop
-  213 00000206 BF00            nop
-  214 00000208 BF00            nop
-  215 0000020A BF00            nop
-  216 0000020C BF00            nop
-  217 0000020E BF00            nop
-  218 00000210 BF00            nop
-  219 00000212 BF00            nop
-  220 00000214 BF00            nop
-  221 00000216 BF00            nop
-  222 00000218 BF00            nop
-  223 0000021A BF00            nop
-  224 0000021C BF00            nop
-  225 0000021E BF00            nop
-  226 00000220 BF00            nop
-  227 00000222 BF00            nop
-  228 00000224 BF00            nop
-  229 00000226 BF00            nop
-  230 00000228 BF00            nop
-  231 0000022A BF00            nop
-  232 0000022C BF00            nop
-  233 0000022E BF00            nop
-  234 00000230 BF00            nop
-  235 00000232 BF00            nop
+                                                            ; flash reg base
+  188 00000190 F240 0100 
+              F2C0 0100        mov32            r1, #0x000  ; addr to erase
+  189 00000198 6001            str              r1, [r0]
+  190 0000019A F240 0102 
+              F2CA 4142        mov32            r1, #0xA4420002 ; erase 1kb
+  191 000001A2 6081            str              r1, [r0,#0x8] ;write CMD to con
+                                                            trol reg
+  192 000001A4         
+  193 000001A4 F240 2180 
+              F2C0 0100        mov32            r1, #0x280  ; addr to write
+  194 000001AC 6001            str              r1, [r0]
+  195 000001AE F240 0101 
+              F2CA 4142        mov32            r1, #0xa4420001 ; write command
+                                                            
+  196 000001B6 6201            str              r1, [r0,#0x20]
+  197 000001B8         
+  198 000001B8 F24E 71DF 
+              F2C0 0100        mov32            r1, #0x0000E7DF
+  199 000001C0 6011            str              r1, [r2, #0x0]
+  200 000001C2 F644 013E 
+              F2C4 7100        mov32            r1, #0x4700483E
+  201 000001CA 6051            str              r1, [r2, #0x4]
+  202 000001CC F24E 71FE 
+              F2CE 71FE        mov32            r1, #0xE7FEE7FE
+  203 000001D4 6091            str              r1, [r2, #0x8]
+  204 000001D6 F24E 71FE 
+              F2CE 71FE        mov32            r1, #0xE7FEE7FE
+  205 000001DE 60D1            str              r1, [r2, #0xC]
+  206 000001E0 F24E 71FE 
+              F2CE 71FE        mov32            r1, #0xE7FEE7FE
+  207 000001E8 6111            str              r1, [r2, #0x10]
+  208 000001EA F24E 71FE 
+              F2CE 71FE        mov32            r1, #0xE7FEE7FE
+  209 000001F2 6151            str              r1, [r2, #0x14]
+  210 000001F4         
+  211 000001F4         
+  212 000001F4 F240 3100 
+              F2C0 0100        mov32            r1, #0x300  ; addr to write
+  213 000001FC 6001            str              r1, [r0]
+  214 000001FE         
+  215 000001FE F240 0101 
+              F2CA 4142        mov32            r1, #0xa4420001 ; write command
+                                                            
+  216 00000206 6201            str              r1, [r0,#0x20]
+  217 00000208         
+  218 00000208 BF00            nop
+  219 0000020A BF00            nop
+  220 0000020C BF00            nop
+  221 0000020E BF00            nop
+  222 00000210 BF00            nop
+  223 00000212 BF00            nop
+  224 00000214 BF00            nop
+  225 00000216 BF00            nop
+  226 00000218         ;update PC ans SP
+  227 00000218         ;mov32 r0, #0x400fd000 ; flash reg base
+  228 00000218         ;mov32 r1, #0x000 ; addr to erase
+  229 00000218         ;str r1, [r0]
+  230 00000218         ;mov32 r1, #0xA4420002 ; erase 1kb
 
 
 
 ARM Macro Assembler    Page 6 
 
 
-  236 00000234 BF00            nop
-  237 00000236 BF00            nop
-  238 00000238 BF00            nop
-  239 0000023A BF00            nop
-  240 0000023C BF00            nop
-  241 0000023E BF00            nop
-  242 00000240         
-  243 00000240 F24D 0000 
-              F2C4 000F        mov32            r0, #0x400fd000 
-                                                            ; flash reg base
-  244 00000248 F240 0100 
-              F2C0 0100        mov32            r1, #0x000  ; addr to erase
-  245 00000250 6001            str              r1, [r0]
-  246 00000252 F240 0102 
-              F2CA 4142        mov32            r1, #0xA4420002 ; erase 1kb
-  247 0000025A 6081            str              r1, [r0,#0x8] ;write CMD to con
-                                                            trol reg
-  248 0000025C         
-  249 0000025C F640 0101 
-              F2C0 0100        mov32            r1, #0x00000801 ; data to write
-                                                            
-  250 00000264 6041            str              r1, [r0, #0x4]
-  251 00000266 F240 0104 
-              F2C0 0100        mov32            r1, #0x004  ;address  
-  252 0000026E 6001            str              r1, [r0]
-  253 00000270 F240 0101 
+  231 00000218         ;str r1, [r0,#0x8];write CMD to control reg
+  232 00000218         
+  233 00000218         
+  234 00000218         ;mov32 r1, #0x00000801 ; data to write
+  235 00000218         ;str r1, [r0, #0x4]
+  236 00000218         ;mov32 r1, #0x004 ;address  
+  237 00000218         ;str r1, [r0]
+  238 00000218         ;mov32 r1, #0xa4420001 ; write command
+  239 00000218         ;str r1, [r0,#0x8]
+  240 00000218         
+  241 00000218         
+  242 00000218 F240 2108 
+              F2C2 0100        mov32            r1, #0x20000208
+  243 00000220 6011            str              r1, [r2, #0x0]
+  244 00000222 F240 2181 
+              F2C0 0100        mov32            r1, #0x00000281
+  245 0000022A 6051            str              r1, [r2, #0x4]
+  246 0000022C F240 3109 
+              F2C0 0100        mov32            r1, #0x00000309
+  247 00000234 6091            str              r1, [r2, #0x8]
+  248 00000236 F240 310B 
+              F2C0 0100        mov32            r1, #0x0000030B
+  249 0000023E 60D1            str              r1, [r2, #0xC]
+  250 00000240 F240 310D 
+              F2C0 0100        mov32            r1, #0x0000030D
+  251 00000248 6111            str              r1, [r2, #0x10]
+  252 0000024A F240 310F 
+              F2C0 0100        mov32            r1, #0x0000030F
+  253 00000252 6151            str              r1, [r2, #0x14]
+  254 00000254 F240 3111 
+              F2C0 0100        mov32            r1, #0x00000311
+  255 0000025C 6191            str              r1, [r2, #0x18]
+  256 0000025E F240 0100 
+              F2C0 0100        mov32            r1, #0x00000000
+  257 00000266 61D1            str              r1, [r2, #0x1C]
+  258 00000268 F240 0100 
+              F2C0 0100        mov32            r1, #0x00000000
+  259 00000270 6211            str              r1, [r2, #0x20]
+  260 00000272 F240 0100 
+              F2C0 0100        mov32            r1, #0x00000000
+  261 0000027A 6251            str              r1, [r2, #0x24]
+  262 0000027C F240 0100 
+              F2C0 0100        mov32            r1, #0x00000000
+  263 00000284 6291            str              r1, [r2, #0x28]
+  264 00000286         
+  265 00000286 F240 0100 
+              F2C0 0100        mov32            r1, #0x000  ; addr to write
+  266 0000028E 6001            str              r1, [r0]
+  267 00000290 F240 0101 
               F2CA 4142        mov32            r1, #0xa4420001 ; write command
                                                             
-  254 00000278 6081            str              r1, [r0,#0x8]
-  255 0000027A         
-  256 0000027A         
-  257 0000027A         ;mov32 r1, #0x004 ; addr of PC
-  258 0000027A         ;str r1, [r0]
-  259 0000027A         ;mov32 r1, #0xA4420002 ; erase 1 word
-  260 0000027A         ;str r1, [r0,#0x8];write CMD to control reg
-  261 0000027A         
-  262 0000027A         
-  263 0000027A         
-  264 0000027A         
-  265 0000027A         ;time to reset micro
-  266 0000027A F24E 0000 
+  268 00000298 6201            str              r1, [r0,#0x20]
+  269 0000029A         
+  270 0000029A         
+  271 0000029A         ;mov32 r1, #0x004 ; addr of PC
+  272 0000029A         ;str r1, [r0]
+  273 0000029A         ;mov32 r1, #0xA4420002 ; erase 1 word
+  274 0000029A         ;str r1, [r0,#0x8];write CMD to control reg
+  275 0000029A         
+
+
+
+ARM Macro Assembler    Page 7 
+
+
+  276 0000029A         
+  277 0000029A         
+  278 0000029A         
+  279 0000029A         ;time to reset micro
+  280 0000029A F24E 0000 
               F2CE 0000        mov32            r0, #0xe000e000 
                                                             ; flash reg base
-  267 00000282 F240 0104 
+  281 000002A2 F240 0104 
               F2C0 51FA        mov32            r1, #0x05fa0004 ; addr to erase
                                                             
-  268 0000028A 6081            str              r1, [r0,#0x8]
-  269 0000028C         
-  270 0000028C         ;B   Start
-  271 0000028C         
-  272 0000028C                 ALIGN
-  273 0000028C                 END
+  282 000002AA 6081            str              r1, [r0,#0x8]
+  283 000002AC         
+  284 000002AC         ;B   Start
+  285 000002AC         
+  286 000002AC                 ALIGN
+  287 000002AC                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\objects\main.d -o.\objects\main.o -I"C:\Users\Taylor\Document
 s\GitHub\TivaC-Hacking\Keil Files\Blinky\RTE" -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\4

@@ -86,128 +86,72 @@
 Start 
 	;write to buffer
 	mov32 r2, #0x400fd100 ;write FWBn location
-	mov32 r1, #0x1008F24E
+	mov32 r1, #0x1008F24E;
 	str r1, [r2]
-	mov32 r1, #0x000FF2C4
+	mov32 r1, #0x000FF2C4 ;
 	str r1, [r2, #0x4]
-	mov32 r1, #0x0120F04F
+	mov32 r1, #0x0120F04F;
 	str r1, [r2, #0x8]
-	mov32 r1, #0x6001
+	mov32 r1, #0xF2456001;
 	str r1, [r2, #0xC]
-	mov32 r1, #0xF245
+	mov32 r1, #0xF2C40000;
 	str r1, [r2, #0x10]
-	mov32 r1, #0x0002F2C4
+	mov32 r1, #0xF2440002;
 	str r1, [r2, #0x14]
-	mov32 r1, #0x314BF244
+	mov32 r1, #0xF6C4314B
 	str r1, [r2, #0x18]
-	mov32 r1, #0x414FF6C4
+	mov32 r1, #0xF8C0414F;
 	str r1, [r2, #0x1C]
-	mov32 r1, #0x1520F8C0
+	mov32 r1, #0xF04F1520;
 	str r1, [r2, #0x20]
-	mov32 r1, #0x011FF04F
+	mov32 r1, #0xF8C0011F;
 	str r1, [r2, #0x24]
-	mov32 r1, #0x1524F8C0
+	mov32 r1, #0xF04F1524;
 	str r1, [r2, #0x28]
-	mov32 r1, #0x0111F04F
+	mov32 r1, #0xF8C00111;
 	str r1, [r2, #0x2C]
-	mov32 r1, #0x1510F8C0
+	mov32 r1, #0xF04F1510;
 	str r1, [r2, #0x30]
-	mov32 r1, #0x010FF04F
+	mov32 r1, #0xF8C0010F;
 	str r1, [r2, #0x34]
-	mov32 r1, #0x1400F8C0
+	mov32 r1, #0xF04F1400;
 	str r1, [r2, #0x38]
-	mov32 r1, #0x011FF04F
+	mov32 r1, #0xF8C0011F;
 	str r1, [r2, #0x3C]
-	mov32 r1, #0x151CF8C0
+	mov32 r1, #0xF240151C
 	str r1, [r2, #0x40]
-	mov32 r1, #0x0102F240
+	mov32 r1, #0xF2C00102
 	str r1, [r2, #0x44]
-	mov32 r1, #0x0100F2C0
+	mov32 r1, #0x63810100
 	str r1, [r2, #0x48]
-	mov32 r1, #0x6381
+	mov32 r1, #0x0400F04F
 	str r1, [r2, #0x4C]
-	mov32 r1, #0x0400F04F
-	str r1, [r2, #0x50]
 	mov32 r1, #0x75FFF64F
-	str r1, [r2, #0x54]
+	str r1, [r2, #0x50]
 	mov32 r1, #0x050FF2C0
+	str r1, [r2, #0x54]
+	mov32 r1, #0x0402F104
 	str r1, [r2, #0x58]
-	mov32 r1, #0x0402F104
+	mov32 r1, #0xDDFB42AC
 	str r1, [r2, #0x5C]
-	mov32 r1, #0x42AC0000
-	str r1, [r2, #0x60]
-	mov32 r1, #0xDDFB
-	str r1, [r2, #0x64]
 	mov32 r1, #0x0104F240
+	str r1, [r2, #0x60]
+	mov32 r1, #0x0100F2C0
+	str r1, [r2, #0x64]
+	mov32 r1, #0xF04F6381
 	str r1, [r2, #0x68]
-	mov32 r1, #0x0100F2C0
+	mov32 r1, #0xF1040400
 	str r1, [r2, #0x6C]
-	mov32 r1, #0x6381
+	mov32 r1, #0x42AC0402
 	str r1, [r2, #0x70]
-	mov32 r1, #0x0400F04F
+	mov32 r1, #0xF240DDFB
 	str r1, [r2, #0x74]
-	mov32 r1, #0x0402F104
+	mov32 r1, #0xF2C00108
 	str r1, [r2, #0x78]
-	mov32 r1, #0x000042AC
+	mov32 r1, #0x63810100
 	str r1, [r2, #0x7C]
-	mov32 r1, #0xDDFB
-	str r1, [r2, #0x80]
-	mov32 r1, #0x0108F240
-	str r1, [r2, #0x84]
-	mov32 r1, #0x0100F2C0
-	str r1, [r2, #0x88]
-	mov32 r1, #0x6381
-	str r1, [r2, #0x8C]
-	mov32 r1, #0xE7DF
-	str r1, [r2, #0x90]
-	mov32 r1, #0x00000000
-	str r1, [r2, #0x94]
 	
-	mov32 r0, #0x400fd000 ; flash reg base
-	mov32 r1, #0x800 ; addr to erase
-	str r1, [r0]
-	mov32 r1, #0xA4420002 ; erase 1kb
-	str r1, [r0,#0x8];write CMD to control reg
-	
-	mov32 r1, #0x801 ; addr to write
-	str r1, [r0]
-	
-	mov32 r1, #0xa4420001 ; write command
-	str r1, [r0,#0x20]
-		
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
+	nop;buffer to make sure program is outside of deleting area
 	nop
 	nop
 	nop
@@ -245,13 +189,83 @@ Start
 	str r1, [r0]
 	mov32 r1, #0xA4420002 ; erase 1kb
 	str r1, [r0,#0x8];write CMD to control reg
-
-	mov32 r1, #0x00000801 ; data to write
-	str r1, [r0, #0x4]
-	mov32 r1, #0x004 ;address  
+	
+	mov32 r1, #0x280 ; addr to write
 	str r1, [r0]
 	mov32 r1, #0xa4420001 ; write command
-	str r1, [r0,#0x8]
+	str r1, [r0,#0x20]
+	
+	mov32 r1, #0x0000E7DF
+	str r1, [r2, #0x0]
+	mov32 r1, #0x4700483E
+	str r1, [r2, #0x4]
+	mov32 r1, #0xE7FEE7FE
+	str r1, [r2, #0x8]
+	mov32 r1, #0xE7FEE7FE
+	str r1, [r2, #0xC]
+	mov32 r1, #0xE7FEE7FE
+	str r1, [r2, #0x10]
+	mov32 r1, #0xE7FEE7FE
+	str r1, [r2, #0x14]
+	
+	
+	mov32 r1, #0x300 ; addr to write
+	str r1, [r0]
+	
+	mov32 r1, #0xa4420001 ; write command
+	str r1, [r0,#0x20]
+		
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+	nop
+		;update PC ans SP
+	;mov32 r0, #0x400fd000 ; flash reg base
+	;mov32 r1, #0x000 ; addr to erase
+	;str r1, [r0]
+	;mov32 r1, #0xA4420002 ; erase 1kb
+	;str r1, [r0,#0x8];write CMD to control reg
+
+
+	;mov32 r1, #0x00000801 ; data to write
+	;str r1, [r0, #0x4]
+	;mov32 r1, #0x004 ;address  
+	;str r1, [r0]
+	;mov32 r1, #0xa4420001 ; write command
+	;str r1, [r0,#0x8]
+
+
+	mov32 r1, #0x20000208
+	str r1, [r2, #0x0]
+	mov32 r1, #0x00000281
+	str r1, [r2, #0x4]
+	mov32 r1, #0x00000309
+	str r1, [r2, #0x8]
+	mov32 r1, #0x0000030B
+	str r1, [r2, #0xC]
+	mov32 r1, #0x0000030D
+	str r1, [r2, #0x10]
+	mov32 r1, #0x0000030F
+	str r1, [r2, #0x14]
+	mov32 r1, #0x00000311
+	str r1, [r2, #0x18]
+	mov32 r1, #0x00000000
+	str r1, [r2, #0x1C]
+	mov32 r1, #0x00000000
+	str r1, [r2, #0x20]
+	mov32 r1, #0x00000000
+	str r1, [r2, #0x24]
+	mov32 r1, #0x00000000
+	str r1, [r2, #0x28]
+
+	mov32 r1, #0x000 ; addr to write
+	str r1, [r0]
+	mov32 r1, #0xa4420001 ; write command
+	str r1, [r0,#0x20]
 
 	
 	;mov32 r1, #0x004 ; addr of PC
