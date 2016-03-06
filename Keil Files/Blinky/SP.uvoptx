@@ -141,92 +141,227 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>UL2CM3</Key>
-          <Name>UL2CM3(-S0 -C0 -P0 ) -FN1 -FC1000 -FD20000000 -FF0TM4C123_256 -FL040000 -FS00 -FP0($$Device:TM4C123GH6PM$Flash\TM4C123_256.FLM)</Name>
+          <Name>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0TM4C123_256 -FS00 -FL040000 -FP0($$Device:TM4C123GH6PM$Flash\TM4C123_256.FLM))</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint>
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>21</LineNumber>
+          <LineNumber>254</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>796</Address>
+          <Address>1252</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\main.c</Filename>
+          <Filename>.\main.s</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\SP\main.c\21</Expression>
+          <Expression>0x000004E4</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>10</LineNumber>
+          <LineNumber>243</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>780</Address>
+          <Address>1196</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\main.c</Filename>
+          <Filename>.\main.s</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\SP\main.c\10</Expression>
+          <Expression>0x000004AC</Expression>
+        </Bp>
+        <Bp>
+          <Number>2</Number>
+          <Type>0</Type>
+          <LineNumber>179</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>1070</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\main.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>0x0000042E</Expression>
+        </Bp>
+        <Bp>
+          <Number>3</Number>
+          <Type>0</Type>
+          <LineNumber>176</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>1066</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\main.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>0x0000042A</Expression>
+        </Bp>
+        <Bp>
+          <Number>4</Number>
+          <Type>0</Type>
+          <LineNumber>88</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>620</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\main.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>0x0000026C</Expression>
+        </Bp>
+        <Bp>
+          <Number>5</Number>
+          <Type>0</Type>
+          <LineNumber>188</LineNumber>
+          <EnabledFlag>0</EnabledFlag>
+          <Address>1088</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\main.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>0x00000440</Expression>
+        </Bp>
+        <Bp>
+          <Number>6</Number>
+          <Type>0</Type>
+          <LineNumber>0</LineNumber>
+          <EnabledFlag>0</EnabledFlag>
+          <Address>640</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename></Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>0x00000280</Expression>
+        </Bp>
+        <Bp>
+          <Number>7</Number>
+          <Type>0</Type>
+          <LineNumber>837</LineNumber>
+          <EnabledFlag>0</EnabledFlag>
+          <Address>1474</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>RTE\Device\TM4C123GH6PM\startup_TM4C123.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\SP\RTE/Device/TM4C123GH6PM/startup_TM4C123.s\837</Expression>
+        </Bp>
+        <Bp>
+          <Number>8</Number>
+          <Type>0</Type>
+          <LineNumber>550</LineNumber>
+          <EnabledFlag>0</EnabledFlag>
+          <Address>1846</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>RTE\Device\TM4C123GH6PM\system_TM4C123.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\SP\RTE/Device/TM4C123GH6PM/system_TM4C123.c\550</Expression>
+        </Bp>
+        <Bp>
+          <Number>9</Number>
+          <Type>0</Type>
+          <LineNumber>594</LineNumber>
+          <EnabledFlag>0</EnabledFlag>
+          <Address>1948</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>RTE\Device\TM4C123GH6PM\system_TM4C123.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\SP\RTE/Device/TM4C123GH6PM/system_TM4C123.c\594</Expression>
+        </Bp>
+        <Bp>
+          <Number>10</Number>
+          <Type>0</Type>
+          <LineNumber>237</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>1272</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>RTE\Device\TM4C123GH6PM\startup_TM4C123.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\SP\RTE/Device/TM4C123GH6PM/startup_TM4C123.s\237</Expression>
+        </Bp>
+        <Bp>
+          <Number>11</Number>
+          <Type>0</Type>
+          <LineNumber>255</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>.\main.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
-      <WatchWindow1>
-        <Ww>
-          <count>0</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>buffer</ItemText>
-        </Ww>
-        <Ww>
-          <count>1</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>buffer2</ItemText>
-        </Ww>
-        <Ww>
-          <count>2</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>R0</ItemText>
-        </Ww>
-      </WatchWindow1>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>0</SubType>
-          <ItemText>0x00000000</ItemText>
+          <ItemText>0x000000000</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>
       <MemoryWindow2>
         <Mm>
           <WinNumber>2</WinNumber>
-          <SubType>2</SubType>
-          <ItemText>0x20000068</ItemText>
+          <SubType>5</SubType>
+          <ItemText>0x400FD000</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow2>
       <MemoryWindow3>
         <Mm>
           <WinNumber>3</WinNumber>
-          <SubType>0</SubType>
-          <ItemText>0x20007f54</ItemText>
+          <SubType>2</SubType>
+          <ItemText>0x00000800</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow3>
-      <MemoryWindow4>
-        <Mm>
-          <WinNumber>4</WinNumber>
-          <SubType>0</SubType>
-          <ItemText>0x0000001cF</ItemText>
-          <AccSizeX>0</AccSizeX>
-        </Mm>
-      </MemoryWindow4>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
@@ -274,12 +409,12 @@
     <File>
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
-      <FileType>1</FileType>
+      <FileType>2</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\main.c</PathWithFileName>
-      <FilenameWithoutPath>main.c</FilenameWithoutPath>
+      <PathWithFileName>.\main.s</PathWithFileName>
+      <FilenameWithoutPath>main.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
